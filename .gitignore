@@ -13,3 +13,15 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+
+out
+node_modules
+.vscode-test
+.DS_Store
+.idea
+.vscode
+.env
+.bash_history
+.vscode/
+test/
