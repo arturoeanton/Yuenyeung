@@ -1,4 +1,4 @@
-package handler1
+package handler_example
 
 import (
 	"net/http"
@@ -7,23 +7,23 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// Handler1 is example1
-type Handler1 struct {
+// HandlerExample is exampleExample
+type HandlerExample struct {
 	register.HandlerBase
 }
 
 func init() {
-	h := new(Handler1)
-	h.Path = "/handler1/:param"
+	h := new(HandlerExample)
+	h.Path = "/handlerExample/:param"
 	h.Methods = []string{http.MethodGet, http.MethodPost}
 	register.Register(h)
 }
 
 // Endpoint is implement of interface Handler
-func (h *Handler1) Endpoint(c *gin.Context) {
+func (h *HandlerExample) Endpoint(c *gin.Context) {
 	param := c.Param("param")
 	c.JSON(200, gin.H{
 		"message": param,
-		"handler": "1",
+		"handler": "Example",
 	})
 }

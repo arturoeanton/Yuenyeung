@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 
-	_ "github.com/arturoeanton/Yuenyeung/handlers/handler1"
-	_ "github.com/arturoeanton/Yuenyeung/handlers/handler2"
+	_ "github.com/arturoeanton/Yuenyeung/handlers/handler_example"
 	"github.com/arturoeanton/Yuenyeung/register"
 	"github.com/gin-gonic/gin"
 )
